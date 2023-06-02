@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.GCScriptForPAD", "Modules.GCScriptForPAD\Modules.GCScriptForPAD.csproj", "{526414E0-AD52-4357-893A-027B11ABE242}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.GCScriptForPAD.Tests", "Modules.GCScriptForPAD.Tests\Modules.GCScriptForPAD.Tests.csproj", "{12AB1825-ED69-4858-BCD2-8BBE302664F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{526414E0-AD52-4357-893A-027B11ABE242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526414E0-AD52-4357-893A-027B11ABE242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526414E0-AD52-4357-893A-027B11ABE242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526414E0-AD52-4357-893A-027B11ABE242}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12AB1825-ED69-4858-BCD2-8BBE302664F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12AB1825-ED69-4858-BCD2-8BBE302664F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12AB1825-ED69-4858-BCD2-8BBE302664F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12AB1825-ED69-4858-BCD2-8BBE302664F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A761E45-F58E-4134-B6A9-EB49097A549C}
+	EndGlobalSection
+EndGlobal
