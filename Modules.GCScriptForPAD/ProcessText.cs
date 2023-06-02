@@ -52,9 +52,9 @@ namespace Modules.GCScriptForPAD
 
     public enum ESelectorChoice
     {
-        Selector1,
-        Selector2,
-        Selector3
+        DisplayOnlyFirstName,
+        DisplayFullName,
+        DisplayFullDetails
     }
 
     [Action(Id = "CentralCustomAction")]
@@ -62,16 +62,16 @@ namespace Modules.GCScriptForPAD
     {
         #region Properties
 
-        [InputArgument, DefaultValue(ESelectorChoice.Selector1)]
+        [InputArgument, DefaultValue(ESelectorChoice.DisplayOnlyFirstName)]
         public ESelectorChoice Selector { get; set; }
 
-        [InputArgument(Order = 1)]
+        [InputArgument(Order = 1), Description("FirstName")]
         public string FirstName { get; set; }
 
-        [InputArgument(Order = 2)]
+        [InputArgument(Order = 2), Description("LastName")]
         public string LastName { get; set; }
 
-        [InputArgument(Order = 3)]
+        [InputArgument(Order = 3), Description("Age")]
         public int Age { get; set; }
 
         [OutputArgument]
@@ -83,11 +83,11 @@ namespace Modules.GCScriptForPAD
 
         public override void Execute(ActionContext context)
         {
-            if (Selector == ESelectorChoice.Selector1)
+            if (Selector == ESelectorChoice.DisplayOnlyFirstName)
             {
                 DisplayedMessage = $"Hello, {FirstName}!";
             }
-            else if (Selector == ESelectorChoice.Selector2)
+            else if (Selector == ESelectorChoice.DisplayFullName)
             {
                 DisplayedMessage = $"Hello, {FirstName} {LastName}!";
             }

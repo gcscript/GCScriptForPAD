@@ -7,7 +7,7 @@ namespace Modules.GCScriptForPAD.Selectors
         public Selector1()
         {
             UseName("DisplayOnlyFirstName");
-            Prop(p => p.Selector).ShouldBe(ESelectorChoice.Selector1);
+            Prop(p => p.Selector).ShouldBe(ESelectorChoice.DisplayOnlyFirstName);
             ShowAll();
             Hide(p => p.LastName);
             Hide(p => p.Age);
@@ -22,7 +22,7 @@ namespace Modules.GCScriptForPAD.Selectors
         public Selector2()
         {
             UseName("DisplayFullName");
-            Prop(p => p.Selector).ShouldBe(ESelectorChoice.Selector2);
+            Prop(p => p.Selector).ShouldBe(ESelectorChoice.DisplayFullName);
             ShowAll();
             Hide(p => p.Age);
         }
@@ -33,7 +33,7 @@ namespace Modules.GCScriptForPAD.Selectors
         public Selector3()
         {
             UseName("DisplayFullDetails");
-            Prop(p => p.Selector).ShouldBe(ESelectorChoice.Selector3);
+            Prop(p => p.Selector).ShouldBe(ESelectorChoice.DisplayFullDetails);
             ShowAll();
         }
     }
